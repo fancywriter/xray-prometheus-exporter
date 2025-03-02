@@ -103,13 +103,10 @@ xray_downlink_bytes_total{user="client2"} 456
 # TYPE xray_uplink_bytes_total counter
 xray_uplink_bytes_total{user="client1"} 789
 xray_uplink_bytes_total{user="client2"} 111
+```
 
 Now it could be integrated with anything which supports Prometheus (like Grafana).
 
-```
 ## Implementation
 Based on [tonic](https://docs.rs/tonic/latest/tonic/) and [prost](https://docs.rs/prost/latest/prost/) crates to query gRPC Xray endpoint and [prometheus_exporter](https://docs.rs/prometheus_exporter/latest/prometheus_exporter/). Connection pooling is handled with [bb8](https://docs.rs/bb8/latest/bb8/).
-```
-```
-```
-```
+
